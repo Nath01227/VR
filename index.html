@@ -15,6 +15,8 @@
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
 
+    <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
+
       <!-- Primeiro objeto com ID -->
       <a-entity
         id="primeiro"
@@ -32,7 +34,7 @@
         look-at="[gps-camera]"
         static-anchor
         scale="0.30 0.30 0.30"
-        gps-entity-place="latitude: -23.330465; longitude: -47.868075;"
+        gps-new-entity-place="latitude: -23.330465; longitude: -47.868075;"
         animation-mixer
       ></a-entity>
 
