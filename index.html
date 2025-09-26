@@ -15,16 +15,13 @@
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
 
-    <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
-
       <!-- Primeiro objeto com ID -->
       <a-entity
         id="primeiro"
         gltf-model="./assets/3december_-fantasy_ghost/scene.gltf"
         look-at="[gps-camera]"
-        static-anchor
         scale="0.30 0.30 0.30"
-        gps-new-entity-place="latitude: -23.330280; longitude: -47.868193;"
+        gps-entity-place="latitude: -23.330280; longitude: -47.868193;"
         animation-mixer
       ></a-entity>
 
@@ -32,25 +29,22 @@
       <a-entity
         gltf-model="./assets/ghost/scene.gltf"
         look-at="[gps-camera]"
-        static-anchor
         scale="0.30 0.30 0.30"
-        gps-new-entity-place="latitude: -23.330465; longitude: -47.868075;"
+        gps-entity-place="latitude: -23.330465; longitude: -47.868075;"
         animation-mixer
       ></a-entity>
 
       <a-entity
         gltf-model=""
         look-at="[gps-camera]"
-        static-anchor
         scale="0.30 0.30 0.30"
         gps-entity-place="latitude: -23.330523; longitude: -47.868279;"
-        animation-mixer
       ></a-entity>
 
       <a-entity
         gltf-model=""
         look-at="[gps-camera]"
-        scale="30 30 30"
+        scale="0.30 0.30 0.30"
         gps-entity-place="latitude: -23.346580; longitude: -47.845248;"
       ></a-entity>
 
@@ -58,7 +52,7 @@
         gltf-model=""
         look-at="[gps-camera]"
         id="ultimo"
-        scale="30 30 30"
+        scale="0.30 0.30 0.30"
         gps-entity-place="latitude: -23.346495; longitude: -47.845191;"
       ></a-entity>
 
