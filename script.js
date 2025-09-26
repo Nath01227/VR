@@ -67,15 +67,15 @@ window.onload = () => {
     );
 };
 
-// AFRAME.registerComponent('static-anchor', {
-//     init: function () {
-//       const forcarEstatico = this.forcarEstatico;
-//       forcarEstatico.addEventListener('gps-entity-place-update-positon', (naoLer) => {
-//         const gpsComponente = forcarEstatico.components['gps-new-entity-place'] || forcarEstatico.components['gps-entity-place'];
-//         if (gpsComponente && gpsComponente._updatePosition) {
-//           gpsComponente._updatePosition = function () {
-//           };
-//         }
-//       });
-//     }
-//   });
+AFRAME.registerComponent('static-anchor', {
+    init: function () {
+      const forcarEstatico = this.forcarEstatico;
+      forcarEstatico.addEventListener('gps-entity-place-update-positon', (naoLer) => {
+        const gpsComponente = forcarEstatico.components['gps-new-entity-place'] || forcarEstatico.components['gps-entity-place'];
+        if (gpsComponente && gpsComponente._updatePosition) {
+          gpsComponente._updatePosition = function () {
+          };
+        }
+      });
+    }
+  });
