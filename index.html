@@ -14,14 +14,15 @@
       vr-mode-ui="enabled: false"
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
+    <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
       <!-- Primeiro objeto com ID -->
       <a-entity
         id="primeiro"
         gltf-model="./assets/3december_-fantasy_ghost/scene.gltf"
         look-at="[gps-camera]"
-        position="0 -0.5 0"
+        static-anchor
         scale="0.30 0.30 0.30"
-        gps-entity-place="latitude: -23.330280; longitude: -47.868193;"
+        gps-new-entity-place="latitude: -23.330280; longitude: -47.868193;"
         animation-mixer
       ></a-entity>
 
@@ -29,7 +30,7 @@
       <a-entity
         gltf-model="./assets/ghost/scene.gltf"
         look-at="[gps-camera]"
-        position="0 -0.5 0"
+        static-anchor
         scale="0.30 0.30 0.30"
         gps-entity-place="latitude: -23.330465; longitude: -47.868075;"
         animation-mixer
