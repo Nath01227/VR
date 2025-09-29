@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -15,7 +15,7 @@
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
 
-      Primeiro objeto com ID
+      <!-- Primeiro objeto com ID -->
       <a-entity
         id="primeiro"
         gltf-model="./assets/3december_-fantasy_ghost/scene.gltf"
@@ -25,7 +25,7 @@
         animation-mixer
       ></a-entity>
 
-      Outros objetos
+      <!-- Outros objetos -->
       <a-entity
         gltf-model="./assets/ghost/scene.gltf"
         look-at="[gps-camera]"
@@ -57,60 +57,31 @@
         gps-entity-place="latitude: -23.346495; longitude: -47.845191;"
       ></a-entity>
 
-      Câmera com cursor para clique
+      <!-- Câmera com cursor para clique -->
       <a-camera gps-camera rotation-reader>
-        <a-cursor
+        <!-- <a-cursor
           fuse="false"
           raycaster="objects: a-entity"
-        ></a-cursor>
+        ></a-cursor> -->
       </a-camera>
-    </a-scene> -->
-
-    <!-- <script>
-      Pega o objeto pelo ID
+      </a-scene>
+      
+    <script>
+      // Pega o objeto pelo ID
       const primeiro = document.querySelector('#primeiro');
       const ultimo = document.querySelector('#ultimo');
 
-      Adiciona evento de clique
+      // Adiciona evento de clique
       primeiro.addEventListener('click', () => {
         alert('Você clicou no primeiro objeto!');
       });
 
-      Pega o objeto pelo ID
+      // Pega o objeto pelo ID
 
-      Adiciona evento de clique
+      // Adiciona evento de clique
       ultimo.addEventListener('click', () => {
         alert('Você clicou no ultimo objeto!');
       });
     </script>
   </body>
-</html> -->
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GeoAR.js demo</title>
-    <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script>
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
-    </script>
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
-  </head>
-  <body style='margin: 0; overflow: hidden;'>
-    <div class="centered instructions"></div>
-    <a-scene 
-    vr-mode-ui='enabled: false' 
-    embedded
-    arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-    <a-camera gps-camera rotation-reader></a-camera>
-  </a-scene>
-  <div class="centered">
-    <button data-action="change"></button>
-  </div>
-  <script src="./script.js"></script>
-</body>
+</html>
