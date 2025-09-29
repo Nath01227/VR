@@ -11,8 +11,8 @@ function staticLoadPlaces() {
         {
             name: 'Fantasmas',
             location: {
-                lat: -23.330280,
-                lng: -47.845248,
+                lat: -23.330306,
+                lng: -47.868198,
             },
         },
     ];
@@ -21,17 +21,17 @@ function staticLoadPlaces() {
 var models = [
     {
         url: './assets/ghost_girl_animated/scene.gltf',
-        scale: '0.3 0.3 0.3',
+        scale: '1 1 1',
         rotation: '0 180 0',
     },
     {
         url: '.assets/ghost/scene.gltf',
-        scale: '0.2 0.2 0.2',
+        scale: '1 1 1',
         rotation: '0 180 0',
     },
     {
         url: './assets/3december_-fantasy_ghost/scene.gltf',
-        scale: '0.5 0.5 0.5',
+        scale: '1 1 1',
         rotation: '0 180 0',
     },
 ];
